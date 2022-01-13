@@ -59,4 +59,15 @@ public class portfolio {
     public void setInsuranceSumEligible(String insuranceSumEligible) {
         InsuranceSumEligible = insuranceSumEligible;
     }
+
+    @Override
+    public String toString() {
+        return "portfolio{" +
+                "name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                ", prescribedmedicines='" + prescribedmedicines + '\'' +
+                ", PreExistingDiseases='" + PreExistingDiseases + '\'' +
+                ", InsuranceSumEligible='" + InsuranceSumEligible + '\'' +
+                '}';
+    }
 }
