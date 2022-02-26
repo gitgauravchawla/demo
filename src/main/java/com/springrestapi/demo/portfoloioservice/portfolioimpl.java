@@ -17,18 +17,26 @@ public class portfolioimpl implements portfolioservice{
     }
 
 
+
+
     @Override
-    public String addPortfolio(long portfId) {
-        return null;
+    public portfolio addPortfolio(portfolio portfolio) {
+        list.add(portfolio);
+        return portfolio;
     }
 
     @Override
-    public String deletePortfolio(long portfId) {
+    public String deletePortfolio(String name) {
+
+        list.removeIf(e -> e.getName().equals(name));
         return null;
     }
 
     @Override
     public List<portfolio> getportfolio() {
         return list;
+    }
+
+    public List<portfolio> updateportfolio(long portfId){ return null;
     }
 }

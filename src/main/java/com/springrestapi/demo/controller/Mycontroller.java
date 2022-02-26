@@ -21,7 +21,7 @@ public class Mycontroller {
     }
 
     @GetMapping(value="/getportfolio")
-    public List<portfolio> getportfolio(){
+    public List<portfolio> getportfolio(@PathVariable String portfId){
     return this.portfolioservice.getportfolio();
     }
 }

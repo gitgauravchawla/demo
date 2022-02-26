@@ -4,8 +4,8 @@ import java.util.List;
 import com.springrestapi.demo.entity.portfolio;
 
 public interface portfolioservice {
-    public String addPortfolio(long portfId);
-    public String deletePortfolio(long portfId);
+    public portfolio addPortfolio(portfolio portfId);
+    public String deletePortfolio(String name);
     public List<portfolio> getportfolio();
 
 }
